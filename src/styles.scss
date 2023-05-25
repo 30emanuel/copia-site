@@ -1,0 +1,24 @@
+:root{
+  --secondary-color: #202121;
+  --primary-font: 'League Spartan';
+  --secondary-font: 'Lato';
+  --beer-font: 'Lexend Exa';
+  --blue-color: #1F4E85;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
