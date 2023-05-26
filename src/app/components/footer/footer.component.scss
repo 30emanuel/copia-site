@@ -1,7 +1,7 @@
 section{
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   background-color: #D9D9D9;
   color: var(--secondary-color);
 
@@ -33,7 +33,6 @@ section{
 
 .rights{
   color: rgba(0, 0, 0, 0.247);
-  padding: 0px 20px;
   div{
     display: flex;
     a{
@@ -47,10 +46,16 @@ section{
   text-align: center;
   justify-content: center;
   align-items: center;
+  img{
+    margin-top: 10px;
+    width: 200px;
+  }
 }
 
 #map img{
   height: 250px;
+  margin-top: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
   text-align: end;
+  border-radius: 10px;
 }

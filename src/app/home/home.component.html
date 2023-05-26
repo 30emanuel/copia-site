@@ -38,7 +38,9 @@
       <div class="beer-body">
         <h3>{{selectedBeer.name}}</h3>
         <div class="beer-info">
-          <app-typography element="p" text="{{selectedBeer.description}}"></app-typography>
+          <div class="description">
+            <app-typography element="p" text="{{selectedBeer.description}}"></app-typography>
+          </div>
           <div class="ibu">
             <app-typography element="h2" text="{{selectedBeer.ibu}}" class="content"></app-typography>
             <div>
