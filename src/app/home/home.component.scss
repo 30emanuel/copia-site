@@ -23,7 +23,10 @@ section{
 
   .text{
     margin-left: 30px;
-    max-width: 650px;
+    max-width: 550px;
+    .p{
+      margin-left: 5px;
+    }
   }
 }
 
@@ -38,9 +41,9 @@ section{
 
   .body{
     align-items: end;
-    display: flex;
     margin-top: 50px;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
     h3{
       font-family: var(--beer-font);
     }
@@ -56,6 +59,7 @@ section{
 .beers{
   display: flex;
   .beer{
+    cursor: pointer;
     text-align: center;
     margin-right: 70px;
 
@@ -67,7 +71,6 @@ section{
 
 .beer-about{
   width: 500px;
-
   .beer-header{
     margin-top: -100px;
   }
@@ -112,10 +115,15 @@ section{
     }
   }
 
+  img{
+    width: 650px;
+  }
+
 }
 
 .happy-hour{
   display: flex;
+  margin-top: -50px;
 
   img{
     margin-right: 30px;
