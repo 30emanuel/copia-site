@@ -37,16 +37,20 @@
       </div>
       <div class="beer-body">
         <h3>{{selectedBeer.name}}</h3>
-        <app-typography element="p" text="{{selectedBeer.description}}"></app-typography>
         <div class="beer-info">
+          <app-typography element="p" text="{{selectedBeer.description}}"></app-typography>
           <div class="ibu">
             <app-typography element="h2" text="{{selectedBeer.ibu}}" class="content"></app-typography>
-            <app-typography element="p" text="Abv% ( Teor alcólico )"></app-typography>
+            <div>
+              <app-typography element="p" text="Abv% ( Teor alcólico )"></app-typography>
+            </div>
           </div>
           <div class="abv">
             <app-typography element="h2" text="{{selectedBeer.abv}}" class="content"></app-typography>
             <img src="../../assets/imgs/hops-svgrepo-com 1.png" alt="abv">
-            <app-typography element="p" text="Ibu ( Amargor)"></app-typography>
+            <div>
+              <app-typography element="p" text="Ibu ( Amargor )"></app-typography>
+            </div>
           </div>
         </div>
       </div>
@@ -70,7 +74,7 @@
     <img src="../../assets/imgs/salaofotos.png" alt="Hall">
   </div>
   <div class="happy-hour">
-    <div>
+    <div class="img">
       <img src="../../assets/imgs/@cervejariauppsala 1.png" alt="Happy hour">
     </div>
     <div class="text">

@@ -1,15 +1,10 @@
 .background-image {
   background: no-repeat center/cover url('../../assets/imgs/bg-inicio.png');
   height: 500px;
-
-  app-typography {
-    color: white;
-    position: absolute;
-    top: 230px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section{
@@ -18,16 +13,19 @@ section{
 
 .about{
   display: flex;
-  padding: 50px;
   color: var(--secondary-color);
 
   .text{
-    margin-left: 30px;
     max-width: 550px;
     .p{
       margin-left: 5px;
     }
   }
+}
+
+.text{
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .drinks{
@@ -70,7 +68,8 @@ section{
 }
 
 .beer-about{
-  width: 500px;
+  width: 600px;
+  height: 350px;
   .beer-header{
     margin-top: -100px;
   }
@@ -88,8 +87,12 @@ section{
 
       .ibu, .abv{
         display: flex;
-        text-align: center;
 
+        div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .content{
           color: red;
         }
@@ -99,8 +102,10 @@ section{
 }
 
 
+
 .hall{
   color: var(--secondary-color);
+  line-height: 30px;
 }
 
 .info{
@@ -108,29 +113,23 @@ section{
   justify-content: space-between;
 
   .text{
-    max-width: 350px;
-    margin-right: 50px;
-    div{
-      margin-top: 50px;
-    }
+    max-width: 400px;
   }
 
   img{
-    width: 650px;
+    height: 400px;
   }
 
 }
 
 .happy-hour{
   display: flex;
-  margin-top: -50px;
 
-  img{
-    margin-right: 30px;
+  .text{ 
+    max-width: 400px;
   }
 
-  .text{
-    margin-top: 50px;
-    max-width: 300px;
+  .img img{
+    height: 500px;
   }
 }
