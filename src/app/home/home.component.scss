@@ -57,6 +57,11 @@ section{
   }
 }
 
+
+.beers-carousel{
+  display: none;
+}
+
 .beers{
   display: flex;
   .beer{
@@ -105,14 +110,15 @@ section{
       .ibu, .abv{
         display: flex;
 
+        .red{
+          color: red;
+        }
+
         div{
           display: flex;
           justify-content: center;
           align-items: center;
           margin-left: 10px;
-        }
-        .content{
-          color: red;
         }
       }
     }
@@ -156,16 +162,92 @@ section{
   }
 }
 
+@media (max-width: 1000px) {
+
+  .drinks{
+    background: no-repeat bottom/cover url('../../assets/imgs/fundo-cervejas.png');
+    height: 693px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+
+    .header{
+      text-align: center;
+      justify-content: center;
+    }
+    .body{
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .click, .subttitle, .beer-header, .beers{
+      display: none;
+    }
+  }
+
+  .beers-carousel{
+    width: 100%;
+    display: flex;
+    height: 300px;
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+
+    .arrow{
+      width: 50px;
+    }
+
+    .beer{
+      margin: 0px 30px;
+      width: 250px;
+    }
+
+    i{
+      font-size: 50px;
+      font-weight: bolder;
+    }
+  }
+
+  .beer-about{
+    width: 100%;
+    margin-top: -75px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3{
+      color: red;
+    }
+
+    .description{
+      margin-top: -25px;
+    }
+
+  }
+
+  .content{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
 
 @media (max-width: 800px) {
   section{
     padding: 10px;
   }
-  .about{
+
+  .about,.info,.happy-hour{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .about{
     img{
       width: 100%;
     }
@@ -175,25 +257,15 @@ section{
     }
   }
 
-  .drinks{
-    display: none;
-  }
 
   .info {
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     .text {
       margin: 0;
       max-width: none;
     }
   }
   .happy-hour{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     .text {
       margin: 0;
       max-width: none;

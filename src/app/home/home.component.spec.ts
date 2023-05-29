@@ -22,12 +22,12 @@ describe('HomeComponent', () => {
   });
 
   it('should set selectedBeer to the first beer in the list during ngOnInit', () => {
-    expect(component.selectedBeer).toEqual(component.beers[0]);
+    expect(component.selectedBeerIndex).toEqual(component.beers[0]);
   });
 
   it('should update selectedBeer when clickBeer is called', () => {
-    const newBeer = { name: 'Beer', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid.' };
+    const newBeer = 1
     component.clickBeer(newBeer);
-    expect(component.selectedBeer).toEqual(newBeer);
+    expect(component.selectedBeerIndex).toEqual(newBeer);
   });
 });

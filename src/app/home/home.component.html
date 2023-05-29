@@ -21,13 +21,13 @@
   <div class="header">
     <div>
       <app-typography element="h2" text="Nossas cervejas"></app-typography>
-      <app-typography element="p" text="Ps: Temos muito mais opções no nosso salão"></app-typography>
+      <app-typography element="p" class="subttitle" text="Ps: Temos muito mais opções no nosso salão"></app-typography>
     </div>
   </div>
 
   <div class="body">
     <div class="beers">
-        <div class="beer" *ngFor="let beer of beers" (click)='clickBeer(beer)'>
+        <div class="beer" *ngFor="let beer of beers; let i = index" (click)='clickBeer(i)'>
           <h3>{{beer.name}}</h3>
           <img src="../../assets/imgs/cervejas/{{beer.name}}.png" alt="{{beer.name}}">
         </div>
@@ -38,26 +38,36 @@
         <app-typography element="h3" text="Saiba mais sobre a cerveja"></app-typography>
       </div>
       <div class="beer-body">
-        <h3>{{selectedBeer.name}}</h3>
+        <h3>{{beers[selectedBeerIndex].name}}</h3>
         <div class="beer-info">
           <div class="description">
-            <app-typography element="p" text="{{selectedBeer.description}}"></app-typography>
+            <app-typography element="p" text="{{beers[selectedBeerIndex].description}}"></app-typography>
           </div>
-          <div class="ibu">
-            <app-typography element="h2" text="{{selectedBeer.ibu}}" class="content"></app-typography>
-            <div>
-              <app-typography element="p" text="Abv% ( Teor alcólico )"></app-typography>
+          <div class="content">
+            <div class="ibu">
+              <app-typography element="h2" text="{{beers[selectedBeerIndex].ibu}}" class="red"></app-typography>
+              <div>
+                <app-typography element="p" text="Abv% ( Teor alcólico )"></app-typography>
+              </div>
             </div>
-          </div>
-          <div class="abv">
-            <app-typography element="h2" text="{{selectedBeer.abv}}" class="content"></app-typography>
-            <img src="../../assets/imgs/hops-svgrepo-com 1.png" alt="abv">
-            <div>
-              <app-typography element="p" text="Ibu ( Amargor )"></app-typography>
+            <div class="abv">
+              <app-typography element="h2" text="{{beers[selectedBeerIndex].abv}}" class="red"></app-typography>
+              <img src="../../assets/imgs/hops-svgrepo-com 1.png" alt="abv">
+              <div>
+                <app-typography element="p" text="Ibu ( Amargor )"></app-typography>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="beers-carousel">
+      <div class="arrow"><i class="fa-solid fa-arrow-left" (click)="beforeBeer()" *ngIf="showLeftArrow"></i></div>
+      <div class="beer">
+        <img src="../../assets/imgs/cervejas/{{beers[selectedBeerIndex].name}}.png" alt="{{beers[selectedBeerIndex].name}}">
+      </div>
+      <div class="arrow"><i class="fa-solid fa-arrow-right" (click)="nextBeer()" *ngIf="showRightArrow"></i></div>
     </div>
 
   </div>
