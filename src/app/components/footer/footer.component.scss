@@ -58,3 +58,18 @@ section{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  section{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+
+    .contact, .center, .map{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+  }
+}
