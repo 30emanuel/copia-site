@@ -9,10 +9,10 @@ import { DataService } from '../services/data.service';
 export class HomeComponent implements OnInit {
 
   beers: any = [
-    {name: 'Pilsen', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae mi accumsan, dapibus nisl non, gravida magna. Aliquam efficitur nulla ac turpis sollicitudin, at scelerisque risus venenatis. Vestibulum feugiat nisi in ligula sagittis, eu semper turpis semper. Donec at odio vitae felis fringilla.', abv: '16', ibu: '4,5%'},
-    {name: 'Ipa', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae mi accumsan, dapibus nisl non, gravida magna. Aliquam efficitur nulla ac turpis sollicitudin, at scelerisque risus venenatis. Vestibulum feugiat nisi in ligula sagittis, eu semper turpis semper. Donec at odio vitae felis fringilla.', abv: '32', ibu: '4,5%'},
-    {name: 'Stout', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae mi accumsan, dapibus nisl non, gravida magna. Aliquam efficitur nulla ac turpis sollicitudin, at scelerisque risus venenatis. Vestibulum feugiat nisi in ligula sagittis, eu semper turpis semper. Donec at odio vitae felis fringilla.', abv: '37', ibu: '5,5%'},
-    {name: 'Red', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae mi accumsan, dapibus nisl non, gravida magna. Aliquam efficitur nulla ac turpis sollicitudin, at scelerisque risus venenatis. Vestibulum feugiat nisi in ligula sagittis, eu semper turpis semper. Donec at odio vitae felis fringilla.', abv: '52', ibu: '6,2%'},
+    {name: 'Pilsen', description: 'Leve e refrescante, a Pilsen é uma cerveja dourada de sabor suave e equilibrado, com notas maltadas e um amargor sutil. É a escolha perfeita para momentos descontraídos.', abv: '16', ibu: '4,5%'},
+    {name: 'Ipa', description: 'Intensamente aromática e amarga, a IPA é uma cerveja de coloração âmbar com sabores cítricos e frutados provenientes dos lúpulos. É ideal para os apreciadores de um perfil mais ousado.', abv: '32', ibu: '4,5%'},
+    {name: 'Stout', description: 'Escura e encorpada, a Stout é uma cerveja de sabor complexo com notas de café, chocolate e torrefação. Possui uma textura cremosa e um final levemente amargo, proporcionando uma experiência intensa.', abv: '37', ibu: '5,5%'},
+    {name: 'Red', description: 'De coloração avermelhada e aroma caramelado, a Red Ale é uma cerveja de sabor maltado e levemente adocicado. Com equilíbrio entre dulçor e amargor, é uma opção versátil e saborosa para os apreciadores de cervejas mais robustas.', abv: '52', ibu: '6,2%'},
   ]
 
   selectedBeerIndex: number = 0
