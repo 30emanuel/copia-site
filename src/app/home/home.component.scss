@@ -53,7 +53,6 @@ section{
 
   .click{
     font-weight: bolder;
-    margin-left: 150px;
     align-items: end;
   }
 }
@@ -63,7 +62,7 @@ section{
   .beer{
     cursor: pointer;
     text-align: center;
-    margin-right: 70px;
+    margin-right: 50px;
 
     img{
       height: 250px;
@@ -105,7 +104,6 @@ section{
 
       .ibu, .abv{
         display: flex;
-        margin-top: 5px;
 
         div{
           display: flex;
@@ -159,7 +157,7 @@ section{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   section{
     padding: 10px;
   }
