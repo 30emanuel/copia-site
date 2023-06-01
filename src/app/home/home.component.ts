@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  faarrowleft = faArrowLeft
+  faarrowrigth = faArrowRight
 
   beers: any = [
     {name: 'Pilsen', description: 'Leve e refrescante, a Pilsen é uma cerveja dourada de sabor suave e equilibrado, com notas maltadas e um amargor sutil. É a escolha perfeita para momentos descontraídos.', abv: '16', ibu: '4,5%'},

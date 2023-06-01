@@ -69,13 +69,13 @@
     </div>
 
     <div class="beers-carousel">
-      <div class="arrow"><i class="fa-solid fa-arrow-left" (click)="beforeBeer()" *ngIf="showLeftArrow"></i></div>
+      <div class="arrow"><fa-icon [icon]="faarrowleft" (click)="beforeBeer()" *ngIf="showLeftArrow"></fa-icon></div>
       <div class="beer">
         <picture>
           <img src="../../assets/imgs/cervejas/{{beers[selectedBeerIndex].name}}.png" alt="{{beers[selectedBeerIndex].name}}">
         </picture>
       </div>
-      <div class="arrow"><i class="fa-solid fa-arrow-right" (click)="nextBeer()" *ngIf="showRightArrow"></i></div>
+      <div class="arrow"><fa-icon [icon]="faarrowrigth" (click)="nextBeer()" *ngIf="showRightArrow"></fa-icon></div>
     </div>
 
   </div>
