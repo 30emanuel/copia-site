@@ -43,7 +43,7 @@ section{
 
 .rights{
   color: rgba(0, 0, 0, 0.247);
-  padding: 0px 5px;
+  padding: 0px 10px;
   div{
     display: flex;
     a{
@@ -76,11 +76,17 @@ section{
     justify-content: center;
     padding: 50px 0px 0px 0px;
 
-    .contact, .center, .map, .rights{
+    .contact, .center, .map{
       justify-content: center;
       align-items: center;
       text-align: center;
       margin: 20px;
+    }
+
+    .rights{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }
 }
