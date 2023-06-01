@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -21,15 +20,7 @@ export class HomeComponent implements OnInit {
 
   data: any = {}
 
-  constructor(private service: DataService){}
-
   ngOnInit(): void {
-    /*this.service.getData().subscribe(
-      response =>{
-        this.data = response
-        console.log(this.data)
-      }
-    )*/
   }
 
   updateArrowVisibility() {

@@ -1,5 +1,5 @@
 .background-image {
-  background: no-repeat center/cover url('../../assets/imgs/bg-inicio.png');
+  background: no-repeat center/cover url('../../assets/imgs/bg-inicio.jpeg');
   height: 500px;
   color: white;
   display: flex;
@@ -25,6 +25,7 @@ section{
 
   img{
     width: 400px;
+    height: 450px;
   }
 }
 
@@ -33,7 +34,7 @@ section{
 }
 
 .drinks{
-  background: no-repeat bottom/cover url('../../assets/imgs/cervejas/cervejas-fundo.png');
+  background: no-repeat bottom/cover url('../../assets/imgs/cervejas/cervejas-fundo.jpeg');
   color: white;
 
   .header{
@@ -71,6 +72,7 @@ section{
     margin-right: 50px;
 
     img{
+      width: 100%;
       height: 250px;
       margin-top: 10px;
     }
@@ -84,10 +86,6 @@ section{
 .beer-about{
   width: 600px;
   height: 350px;
-
-  img{
-    height: 40px;
-  }
 
   .beer-header{
     margin-top: -100px;
@@ -110,6 +108,10 @@ section{
 
       .ibu, .abv{
         display: flex;
+        img{
+          width: 45px;
+          height: 50px;
+        }
 
         .red{
           color: red;
@@ -159,6 +161,7 @@ section{
   }
 
   .img img{
+    width: 100%;
     height: 500px;
   }
 }
@@ -166,7 +169,7 @@ section{
 @media (max-width: 1000px) {
 
   .drinks{
-    background: no-repeat bottom/cover url('../../assets/imgs/fundo-cervejas.png');
+    background: no-repeat bottom/cover url('../../assets/imgs/fundo-cervejas.jpeg');
     height: 693px;
     justify-content: center;
     text-align: center;
