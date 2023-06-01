@@ -4,7 +4,9 @@
 </div>
 <section class="about" id="about">
   <div>
-    <img src="../../assets/imgs/REDES SOCIAIS_INSTA 2 1.jpeg" alt="Imagem empresa">
+    <picture>
+      <img src="../../assets/imgs/REDES SOCIAIS_INSTA 2 1.jpeg" alt="Imagem empresa">
+    </picture>
   </div>
   <div class="text">
       <div class="title">
@@ -29,7 +31,9 @@
     <div class="beers">
         <div class="beer" *ngFor="let beer of beers; let i = index" (click)='clickBeer(i)'>
           <h3>{{beer.name}}</h3>
-          <img src="../../assets/imgs/cervejas/{{beer.name}}.png" alt="{{beer.name}}">
+          <picture>
+            <img src="../../assets/imgs/cervejas/{{beer.name}}.png" alt="{{beer.name}}">
+          </picture>
         </div>
     </div>
 
@@ -52,7 +56,9 @@
             </div>
             <div class="abv">
               <app-typography element="h2" text="{{beers[selectedBeerIndex].abv}}" class="red"></app-typography>
-              <img src="../../assets/imgs/hops-svgrepo-com 1.png" alt="abv">
+              <picture>
+                <img src="../../assets/imgs/hops-svgrepo-com 1.png" alt="abv">
+              </picture>
               <div>
                 <app-typography element="p" text="Ibu ( Amargor )"></app-typography>
               </div>
@@ -65,7 +71,9 @@
     <div class="beers-carousel">
       <div class="arrow"><i class="fa-solid fa-arrow-left" (click)="beforeBeer()" *ngIf="showLeftArrow"></i></div>
       <div class="beer">
-        <img src="../../assets/imgs/cervejas/{{beers[selectedBeerIndex].name}}.png" alt="{{beers[selectedBeerIndex].name}}">
+        <picture>
+          <img src="../../assets/imgs/cervejas/{{beers[selectedBeerIndex].name}}.png" alt="{{beers[selectedBeerIndex].name}}">
+        </picture>
       </div>
       <div class="arrow"><i class="fa-solid fa-arrow-right" (click)="nextBeer()" *ngIf="showRightArrow"></i></div>
     </div>
@@ -86,15 +94,21 @@
       </div>
     </div>
     <div class="img">
-      <img src="../../assets/imgs/salaofotos.jpeg" alt="Salão fotos">
+      <picture>
+        <img src="../../assets/imgs/salaofotos.jpeg" alt="Salão fotos">
+      </picture>
     </div>
   </div>
   <div class="happy-hour">
     <div class="img">
-      <img src="../../assets/imgs/cervejariauppsala 1.jpeg" alt="Happy hour">
+      <picture>
+        <img src="../../assets/imgs/cervejariauppsala 1.jpeg" alt="Happy hour">
+      </picture>
     </div>
     <div class="text">
-      <img src="../../assets/imgs/LOGOS FINAL_SEM RUIDO SELO 1.png" alt="Logo Uppsala">
+      <picture>
+        <img src="../../assets/imgs/LOGOS FINAL_SEM RUIDO SELO 1.png" alt="Logo Uppsala">
+      </picture>
       <app-typography element="h2" text="O melhor happy hour da cidade"></app-typography>
       <app-typography element="p" text="Descontos em bebidas, muita música e diversão, aqui você encontra o melhor happy hour de Manhuaçu!"></app-typography>
     </div>
