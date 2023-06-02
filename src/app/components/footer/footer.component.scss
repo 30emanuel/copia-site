@@ -1,8 +1,11 @@
+footer{
+  background-color: #D9D9D9;
+}
+
 section{
   display: flex;
   justify-content: space-between;
   padding: 50px 50px 0px 50px;
-  background-color: #D9D9D9;
   color: var(--secondary-color);
 
   div{
