@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit {
 
   nextBeer(){
     this.selectedBeerIndex ++
-    console.log(this.selectedBeerIndex)
     this.updateArrowVisibility()
   }
 

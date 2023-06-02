@@ -1,5 +1,5 @@
 .background-image {
-  background: no-repeat center/cover url('../../assets/imgs/bg-inicio.jpeg');
+  background: no-repeat center/cover url('../../assets/imgs/bg-inicio.webp');
   height: 500px;
   color: white;
   display: flex;
@@ -34,7 +34,7 @@ section{
 }
 
 .drinks{
-  background: no-repeat bottom/cover url('../../assets/imgs/cervejas/cervejas-fundo.jpeg');
+  background: no-repeat bottom/cover url('../../assets/imgs/cervejas/cervejas-fundo.webp');
   color: white;
 
   .header{
@@ -169,7 +169,7 @@ section{
 @media (max-width: 1000px) {
 
   .drinks{
-    background: no-repeat bottom/cover url('../../assets/imgs/fundo-cervejas.jpeg');
+    background: no-repeat bottom/cover url('../../assets/imgs/fundo-cervejas.webp');
     height: 693px;
     justify-content: center;
     text-align: center;
